@@ -11,9 +11,12 @@ body {
     padding: 0px;
     min-height: 100vh;
 }
-
+ 
 *, *::before, *::after {
     box-sizing: inherit;
+}
+a {
+  color: white;
 }
 
 
@@ -254,6 +257,7 @@ nav.flexbox > a {
   bottom: 0;
   margin: auto;
   font-size: 15px;
+  color: white;
 }
 
 .topstory3title {
