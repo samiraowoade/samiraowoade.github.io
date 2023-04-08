@@ -15,9 +15,6 @@ body {
 *, *::before, *::after {
     box-sizing: inherit;
 }
-a {
-  color: white;
-}
 
 
 html, body {
@@ -257,7 +254,6 @@ nav.flexbox > a {
   bottom: 0;
   margin: auto;
   font-size: 15px;
-  color: white;
 }
 
 .topstory3title {
@@ -316,20 +312,12 @@ nav.flexbox > a {
 
 
 
-.footer, .footer2 {
+.footer {
   color: white;
   font-size: 20px;
   background-color: midnightblue;
-  text-align: center;
- 
-  margin: 0;
 }
 
-.footer2{
-  padding-left: 600px;
-  padding-right: 600px;
-  margin-top: 300px;
-}
 img {
   object-fit: contain;
 }
@@ -408,17 +396,11 @@ img {
 }
 
 .intro{
-  margin-top: 100px;
   column-count: 2;
-  column-width: 250px;
-  
 }
 
-.introparag, .bodytext {
+.introparag {
   text-align: left;
   
   font-weight:lighter;
-}
-.introparag {
-  column-span: all;
 }
