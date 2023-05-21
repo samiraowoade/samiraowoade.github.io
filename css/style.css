@@ -218,13 +218,11 @@ nav.flexbox > a {
   font-size: 25px;
   text-align: center;
   border: 2px solid ivory;  
-  
   border-radius: 2px;
-  margin: 0;
-
   margin-top: 40px;
-  margin-left: 90px;
-  margin-right: 40px;
+  margin-left: 325px;
+  margin-right: 125px;
+
   
 }
 .topstory2 {
@@ -638,7 +636,7 @@ img {
 }
   
 body#bgchange {
- ae
+ 
 }
 
 .aisectionimg {
@@ -652,4 +650,12 @@ body#bgchange {
   border-radius: 12px;
   padding: 10px;
 
+}
+
+video {
+  object-fit: contain;
+}
+
+.oui {
+  column-count: 3;
 }
