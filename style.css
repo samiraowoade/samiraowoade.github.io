@@ -571,7 +571,7 @@ img {
   object-fit: scale-down;
   
   margin-bottom: 100px;
-  min-height:100vh;
+  min-height:90vh;
   position: relative;
   overflow: hidden;
 }
@@ -638,7 +638,7 @@ img {
 }
   
 body#bgchange {
-background-color: black;
+
 }
 
 .aisectionimg {
