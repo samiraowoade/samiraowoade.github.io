@@ -1,15 +1,15 @@
 .container img {
-    border-radius: 12;
+    border-radius: 2px; /*Gives all my grid images slightly rounded corners*/
 }
 html {
     font-size: 16px;
-    box-sizing: border-box;
+    box-sizing: border-box; /*Includes border and padding in an elements total dimensions */
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
-    min-height: 100vh;
+    margin: 0px; /*Gives all elements default zero margin*/
+    padding: 0px; /*Gives all elements default zero padding*/
+    min-height: 100vh; /*Makes it occupy all the space on the screen */
 }
  
 *, *::before, *::after {
@@ -59,6 +59,7 @@ h2 {
   align-items: center;
   font-size: 2em;
   color: #ffeead;
+ 
 }
 
 .container > div > img {
@@ -71,6 +72,7 @@ h2 {
 nav {
     font-family: 'Arvo', serif; /*gives all of them the same font*/
     font-size: 20px;
+    background-color: rgba(0, 151, 207, 0);
 
 }
 
@@ -84,13 +86,7 @@ nav {
     padding: 10px; /* Sets padding */
 }
 
-@media (min-width: 600px){
-    nav {
-      padding: 20px; /*Media query to change the menu size for smaller-
-      views such as a tablet*/
-    }
 
-    }
 
 
     a {
@@ -115,7 +111,7 @@ nav ul li a::before {
     }
 
 nav ul li a, .active {
-  color: rgb(7, 168, 171); /*Gives the nav element the color*/
+  color: rgba(0, 151, 207, 1); /*Gives the nav element the color*/
 }
 
   nav ul li a:hover {
@@ -123,8 +119,6 @@ nav ul li a, .active {
    
     padding-top: 13px; /*Moves the thick underline upwards on hover*/
     transition: .6s; /*Makes it take .6 seconds to do above*/
-
-    
 
     transition-timing-function: ease-out;/*Changes the way it transitions*/
    
@@ -165,14 +159,7 @@ nav.flexbox {
 }
 
 
-.fullwidth {
-    flex: 1 0 100%; /*Flex-grow = 1, so it can grow if needed, but not shrink with flex
-    0 as flex-shrink. Our default width is 100%. This is to make sure the other links are
-    forced to go under "home"*/
-    justify-content: center; /* Centers the menu in the mobile view*/
 
-
-}
 
 @media (min-width: 600px){
 
@@ -222,7 +209,7 @@ nav.flexbox > a {
 .topstory{
   padding-top: 100px;
   padding-left: 20px;
-  object-fit: cover;
+  object-fit: cover; /*Defines how an image which isn't fully displayed should fill out box*/
 
 }
 .topstorytitle {
@@ -242,14 +229,14 @@ nav.flexbox > a {
 }
 .topstory2 {
   object-fit: cover;
-
+  padding-left: 10px;
   padding-right: 10px;
 
 }
  
 .topstory2title {
   padding-top: 50px;
-  background-color: rgba(0, 151, 207, 0.65);
+  background-color: rgba(0, 151, 207, 0.75);
   justify-content: center;
   left: 0;
   right: 10px;
@@ -258,11 +245,12 @@ nav.flexbox > a {
   margin: auto;
   font-size: 15px;
   color: white;
+  margin-left: 10px;
 }
 
 .topstory3title {
   padding-top: 50px;
-  background-color: rgba(0, 151, 207, 0.65);
+  background-color: rgba(0, 151, 207, 0.75);
   justify-content: center;
   left: 0;
   right: 10px;
@@ -280,12 +268,12 @@ nav.flexbox > a {
 .topstory4 {
   object-fit: cover;
   padding-right: 10px;
-
+  padding-left: 10px;
 }
 
 .topstory4title {
   padding-top: 50px;
-  background-color: rgba(0, 151, 207, 0.65);
+  background-color: rgba(0, 151, 207, 0.75);
   justify-content: center;
   left: 0;
   right: 10px;
@@ -293,6 +281,7 @@ nav.flexbox > a {
   bottom: 0;
   margin: auto;
   font-size: 15px;
+  margin-left: 10px;
 }
 
 
@@ -303,8 +292,8 @@ nav.flexbox > a {
 }
 .topstory5title {
   padding-top: 50px;
-  background-color: rgba(0, 151, 207, 0.65);
-  justify-content: center;
+  background-color: rgba(0, 151, 207, 0.75);
+  justify-content: center;/*Aligns content to the center vertically */
   left: 0;
   right: 10px;
   top: -50px;
@@ -337,59 +326,49 @@ img {
 .bottomtoptext {
   border: 2px solid ivory;  
   border-radius: 2px; 
-
+  margin-right: 185px;
   margin-top: 10px;
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: 100px;
   margin-bottom: 40px;
   
 }
 
 .bottomtop {
-  padding: 0;
+  padding-left: 20px;
+  padding-right: 105px;
  
 }
 
 .bottomtoptext2 {
   border: 2px solid ivory;  
   border-radius: 2px; 
-
-  margin-top: 10px;
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-right: 100px;
+  margin-left: 135px;
   margin-bottom: 40px;
+  margin-top: 10px;
   
 }
 
 .bottomtop2 {
-  padding: 0;
- 
+  padding-right: 55px;
+  padding-left: 85px;
 }
 
 .bottomtoptext3 {
   border: 2px solid ivory;  
   border-radius: 2px; 
-
   margin-top: 10px;
-  margin-left: 80px;
-  margin-right: 80px;
   margin-bottom: 40px;
+  margin-left: 100px;
+  margin-right: 60px;
   
 }
 
 .bottomtop3 {
-  padding: 0;
- 
+  padding-left: 40px;
+
 }
 
-.recommendedread {
-  object-fit: contain;
-}
-
-.aiimage {
-  width: 50%;
-  height: 50%;
-}
 
 img {
   border-radius: 2px;
@@ -409,16 +388,268 @@ img {
 
 .intro{
   margin-top: 100px;
-  column-count: 2;
+  column-count: 4;
   column-width: 250px;
   
 }
 
-.introparag, .bodytext {
-  text-align: left;
-  
+.introparag{
+  text-align: justify;
+  font-size: 25px;
   font-weight:lighter;
+
+
 }
 .introparag {
-  column-span: all;
+  column-span: all; /* Makes my intro paragraph span all columns and ignore them */
+ 
+}
+
+.bodytext {
+  text-align: left;
+  margin-top: 0;
+  font-weight:lighter;
+}
+
+
+.topstory3 on:hover {
+  padding-left: 30px;
+}
+
+
+.recc {
+  object-fit: cover;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.recctext {
+  font-size: 30px;
+  background-color: rgba(253,84,42,0.55);
+  padding-top: 10px;
+  padding-bottom: 50px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.lastone {
+  padding-left: 20px;
+  object-fit: cover;
+  padding-right: 50px;
+}
+
+.lasttwo {
+  padding-left: 50px;
+  padding-right: 20px;
+}
+
+.reccdesc{
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.link {
+  color:rgba(253,84,42,0.55);
+}
+
+.container .reccdesc a:hover {
+  color:rgb(253, 84, 42);
+  transition: 0.9s;
+  padding-top: 20px;
+
+}
+
+
+
+
+.lastonetext {
+  font-size: 20px;
+}
+
+.lasttwotext {
+  font-size: 20px;
+}
+
+.emptyspace {
+  color: rgba(23, 23, 23, 0);
+
+}
+
+/*Footer*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.FooterContainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.socialIcons{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.socialIcons a{
+  text-decoration: none;
+  padding:10px;
+  background-color: white;
+  margin:10px;
+  border-radius: 10px;
+}
+
+.socialIcons a i{
+  font-size: 32px;
+  color: black;
+  opacity: 0.9s;
+
+
+}
+
+/*Hoover effect*/
+
+.socialIcons a:hover{
+  background: #111;
+  transition: 0.5s;
+}
+.socialIcons a:hover i{
+  color: white;
+  transition: 0.5s;
+}
+
+.fNav {
+  margin: 30px 0;
+
+}
+
+.fNav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.fNav ul li a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition:0.5s;
+  font-family: 'Arvo', serif;
+  font: Arvo;
+}
+
+.fNav ul li a:hover {
+  opacity: 1;
+}
+
+.fBottom {
+  padding: 20px;
+  text-align: center;
+  color: #000;
+  
+}
+
+.fBottom p{
+  color: white;
+  font-family: 'Arvo', serif;
+}
+
+/*VIDEO HEADER*/
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  object-fit: scale-down;
+  
+  margin-bottom: 100px;
+  min-height:100vh;
+  position: relative;
+  overflow: hidden;
+}
+.backvideo {
+  position: absolute;
+  top:0;
+  left:0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 0;
+
+}
+
+
+.bigtitle2 {
+  z-index: 2;
+}
+/*AI FLEXBOX AI FLEXBOX AI FLEXBOX*/
+.intro{
+  display:flex;
+  flex-flow:column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.intro img {
+  width: 1000px;
+  align-self: flex-start;
+}
+
+.aiimage, aisectionimg {
+  align-self: center;
+  
+}
+.intro :nth-child(2) {
+  align-self: center;
+  padding-left: 350px;
+  padding-right: 350px;
+  padding-top: 50px;
+  text-align: center;
+  
+}
+
+.intro :nth-child(3) {
+  padding-top: 100px;
+  padding-left: 100px;
+  font-size: 20px;
+  padding-right: 100px;
+  text-align: center;
+}
+
+.intro p a {
+  color:rgba(0, 151, 207, 0.75);
+}
+
+.intro .introparag a:hover {
+  color:rgba(0, 151, 207, 1);
+  transition: 0.9s;
+  padding-top: 20px;
+  
+
+}
+  
+body#bgchange {
+background-color: black;
+}
+
+.aisectionimg {
+  margin-top: 50px;
+}
+
+.sidesc {
+  margin-top:250px ;
+  font-size: 30px;
+  border: 2px solid white;
+  border-radius: 12px;
+  padding: 10px;
+
 }
