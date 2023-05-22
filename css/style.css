@@ -17,7 +17,7 @@ body {
 }
 a {
   color: white;
-}
+} /*All links are white*/
 
 
 html, body {
@@ -26,13 +26,15 @@ html, body {
     border: 0;
     margin: 0;
     text-align: center;
-}
+} /*Auto sets by BG color to black, defaults the border, margin and padding to 0
+which can later be overriden by targetting specific elements and auto sets my text align to 
+center until overriden.*/
 
 h1, p {
     color:ivory;
     font-family: 'Arvo', serif;
     text-align: center;
-}
+} &/*All my headers and margins are ivory, with the same font family and a default text-aling "center*/
 p {
   font-family: 'Arvo', serif;
 }
@@ -49,9 +51,9 @@ h2 {
     display: inline-block;
     font-weight: lighter ;
    
-
  
-}
+} /*My big header on the landing page. Increased font size, with a lighter font and 
+a box that align with "inline-block"*/
 
 .container > div {
   display: flex;
@@ -60,13 +62,14 @@ h2 {
   font-size: 2em;
   color: #ffeead;
  
-}
+}/*All the divs in my grid container are to be styled in the following way, with flexbox to change their
+alignment*/
 
 .container > div > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} /*Styling for all my images and their object-fit, i.e. how they fill out the frame*/
    
 /*MENU BAR*/
 nav {
@@ -74,7 +77,7 @@ nav {
     font-size: 20px;
     background-color: rgba(0, 151, 207, 0);
 
-}
+}/*The Nav Bar, giving it a larger font size*/
 
 nav ul {
   list-style-type: none; /*deletes the bullets */
@@ -89,14 +92,14 @@ nav {
 
 
 
-    a {
-        position: relative; /* sets the line's position so it doesn't
-        fly up the page*/
-        /*I'm creating a pseudo-element for my anchor to create a 
-        a thick underline*/
-        text-decoration: none; /*Removes underline for anchor, so
-        I can substitute it*/
-    }
+a {
+  position: relative; /* sets the line's position so it doesn't
+  fly up the page*/
+  /*I'm creating a pseudo-element for my anchor to create a 
+  a thick underline*/
+  text-decoration: none; /*Removes underline for anchor, so
+  I can substitute it*/
+}
 
 nav ul li a::before {
         content: ""; /*targets underline*/
@@ -209,7 +212,9 @@ nav.flexbox > a {
 .topstory{
   padding-top: 100px;
   padding-left: 20px;
-  object-fit: cover; /*Defines how an image which isn't fully displayed should fill out box*/
+  object-fit: cover; /*Defines how an image which isn't fully displayed should fill out box,
+  so this one will cover as much space possible. Padding to add some space from the left edge and 
+  padding-top to move it down slightly on the page*/
 
 }
 .topstorytitle {
@@ -221,16 +226,16 @@ nav.flexbox > a {
   border-radius: 2px;
   margin-top: 40px;
   margin-left: 325px;
-  margin-right: 125px;
+  margin-right: 125px;  
+}/*Changes my top story tite to a larger font, with a border with slightly rounded corners, and margin to position it
+better, mostly so it aligns directly in the center from the images two sides*/
 
-  
-}
 .topstory2 {
   object-fit: cover;
   padding-left: 10px;
   padding-right: 10px;
 
-}
+}/*Similar to above*/
  
 .topstory2title {
   padding-top: 50px;
@@ -244,7 +249,9 @@ nav.flexbox > a {
   font-size: 15px;
   color: white;
   margin-left: 10px;
-}
+}/*The text inside of the four boxed required most margin and left, right and top property to align them
+in a desirable way. Also added a semi translucent background so that the image behind is visible
+whilst also improving readability of the text by creating a starker contrast*/
 
 .topstory3title {
   padding-top: 50px;
@@ -257,7 +264,7 @@ nav.flexbox > a {
   margin: auto;
   font-size: 15px;
 }
-
+/*Same as described for topstory2title*/
 .topstory3 {
   padding-top: 100px;
   padding-right:10px;
@@ -268,7 +275,7 @@ nav.flexbox > a {
   padding-right: 10px;
   padding-left: 10px;
 }
-
+/*Same as described for topstory2title*/
 .topstory4title {
   padding-top: 50px;
   background-color: rgba(0, 151, 207, 0.75);
@@ -281,7 +288,7 @@ nav.flexbox > a {
   font-size: 15px;
   margin-left: 10px;
 }
-
+/*Same as described for topstory2title*/
 
 .topstory5 {
 
@@ -300,26 +307,13 @@ nav.flexbox > a {
   font-size: 15px;
 }
 
+/*Same as described for topstory2title*/
 
 
 
-.footer, .footer2 {
-  color: white;
-  font-size: 20px;
-  background-color: midnightblue;
-  text-align: center;
- 
-  margin: 0;
-}
-
-.footer2{
-  padding-left: 600px;
-  padding-right: 600px;
-  margin-top: 300px;
-}
 img {
   object-fit: contain;
-}
+}/*Sets my default object-fit for images to contain*/
 
 .bottomtoptext {
   border: 2px solid ivory;  
@@ -329,13 +323,13 @@ img {
   margin-left: 100px;
   margin-bottom: 40px;
   
-}
+}/*Just a bunch of margins to center the text in relation to the images, and a border with rounded corners*/
 
 .bottomtop {
   padding-left: 20px;
   padding-right: 105px;
  
-}
+}/*Positioning of image using padding*/
 
 .bottomtoptext2 {
   border: 2px solid ivory;  
@@ -345,12 +339,12 @@ img {
   margin-bottom: 40px;
   margin-top: 10px;
   
-}
+}/*Just a bunch of margins to center the text in relation to the images, and a border with rounded corners*/
 
 .bottomtop2 {
   padding-right: 55px;
   padding-left: 85px;
-}
+}/*Positioning of image using padding*/
 
 .bottomtoptext3 {
   border: 2px solid ivory;  
@@ -360,17 +354,17 @@ img {
   margin-left: 100px;
   margin-right: 60px;
   
-}
+}/*Just a bunch of margins to center the text in relation to the images, and a border with rounded corners*/
 
 .bottomtop3 {
   padding-left: 40px;
 
-}
+}/*Positioning of image using padding*/
 
 
 img {
   border-radius: 2px;
-}
+} /*Giving all my images ever so slightly rounded edges*/
 
 .bigtitle2 {
   text-align: center;
@@ -379,17 +373,11 @@ img {
   font-size: 80px;
   display: inline-block;
   font-weight: lighter ;
- 
+
+}/*Similar styling as for the home page, but with slightly smaller font size so the title
+fits in one row*/
 
 
-}
-
-.intro{
-  margin-top: 100px;
-  column-count: 4;
-  column-width: 250px;
-  
-}
 
 .introparag{
   text-align: justify;
@@ -569,7 +557,7 @@ img {
   object-fit: scale-down;
   
   margin-bottom: 100px;
-  min-height:90vh;
+  min-height:100vh;
   position: relative;
   overflow: hidden;
 }
@@ -658,4 +646,20 @@ video {
 
 .oui {
   column-count: 3;
+}
+
+.another, .anothertwo, .aiimage{
+  padding-top: 100px;
+}
+
+.other {
+  font-size: 120px;
+}
+
+.yeahyeah {
+  font-size: 100px;
+}
+
+.you {
+  font-size: 150px;
 }
