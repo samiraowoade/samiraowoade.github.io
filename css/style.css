@@ -366,16 +366,24 @@ img {
   border-radius: 2px;
 } /*Giving all my images ever so slightly rounded edges*/
 
-.bigtitle2 {
+.aiheader {
   text-align: center;
   font-family: 'Arvo', serif;
   color:ivory;
-  font-size: 80px;
+  font-size: 85px;
   display: inline-block;
   font-weight: lighter ;
 
 }/*Similar styling as for the home page, but with slightly smaller font size so the title
 fits in one row*/
+.bigtitle2 {
+  text-align: center;
+  font-family: 'Arvo', serif;
+  color:ivory;
+  display: inline-block;
+  font-weight: lighter ;
+
+}
 
 
 
@@ -654,6 +662,9 @@ video {
 
 .other {
   font-size: 120px;
+  animation:
+  typing 2s steps(21),
+  cursor .4s step-end infinite alternate;
 }
 
 .yeahyeah {
@@ -662,4 +673,104 @@ video {
 
 .you {
   font-size: 150px;
+}
+
+.concony {
+  display: inline-block;
+}
+
+.bigtitle {
+  letter-spacing: 2px;
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+  typing 2s steps(21),
+  cursor .4s step-end infinite alternate;
+}
+
+.aiheader{
+  letter-spacing: 2px;
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+  typing 2s steps(34),
+  cursor .4s step-end infinite alternate;
+  
+}
+@keyframes cursor {
+  50% {border-color: transparent;}
+}
+
+@keyframes typing {
+  from {width:0}
+  
+}
+
+.robotrobot{
+  font-size: 120px;
+  letter-spacing: 2px;
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+  typing 2s steps(19),
+  cursor .4s step-end infinite alternate;
+  
+}
+
+.robotrobot{
+  font-size: 120px;
+  letter-spacing: 2px;
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+  typing 2s steps(19),
+  cursor .4s step-end infinite alternate;
+  
+}
+.other{
+  font-size: 120px;
+  letter-spacing: 2px;
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+  typing 2s steps(21),
+  cursor .4s step-end infinite alternate;
+  
+}
+
+
+.yeahyeah{
+  font-size: 100px;
+  letter-spacing: 2px;
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+  typing 2s steps(23),
+  cursor .4s step-end infinite alternate;
+  
+}
+
+.you1{
+  font-size: 150px;
+  letter-spacing: 2px;
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+  typing 2s steps(14),
+  cursor .4s step-end infinite alternate;
+  
 }
