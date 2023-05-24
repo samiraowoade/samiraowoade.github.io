@@ -774,3 +774,25 @@ video {
   cursor .4s step-end infinite alternate;
 
 }
+
+.headline {
+  padding-top: 50px;
+  font-size: 90px;
+  padding-bottom: 30px;
+}
+
+.col {
+  column-count: 2;
+  min-width: 200px;
+  padding-top: 50px;
+}
+
+.lorem {
+  text-align: justify;
+}
+
+.headline2 {
+  padding-top: 50px;
+  font-size: 70px;
+  padding-bottom: 30px;
+}
