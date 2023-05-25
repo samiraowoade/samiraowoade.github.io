@@ -327,7 +327,7 @@ img {
 
 .bottomtop {
   padding-left: 20px;
-  padding-right: 105px;
+  padding-right: 120px;
  
 }/*Positioning of image using padding*/
 
@@ -796,3 +796,43 @@ video {
   font-size: 70px;
   padding-bottom: 30px;
 }
+
+.anothercontainer {
+  border: 1px solid #ddd;
+  font-size: 20px;
+  text-align: center;
+}
+
+.newscon {
+  transform: scale(0.99);
+  text-align: right;
+  margin: 20px;
+  padding: 20px;
+  transition: all 0.4s;
+  line-height: 120%;
+}
+
+.newscon:hover {
+  box-shadow: rgba(0, 151, 207, 1) 0px 0px 3px 5px;
+  transform: scale(1.01);
+}
+
+.newscon .heading {
+  font-size: 40px;
+  padding-bottom: 20px;
+  margin-bottom:20px ;
+}
+
+.newscon .news {
+  column-count: 3;
+
+}
+.newscon .otherone {
+  column-count: 2;
+}
+
+.newscon .news img {
+  width: 100%;
+
+}
+
