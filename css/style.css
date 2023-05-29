@@ -497,6 +497,8 @@ fits in one row*/
   background-color: white;
   margin:10px;
   border-radius: 10px;
+
+  font-size: 1px;
 }
 
 .socialIcons a i{
